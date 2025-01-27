@@ -85,7 +85,7 @@ h1{
 }
 .aboutMe {
     padding: 50px;
-    margin: 10px 100px;
+    margin: 50px 100px;
     border: 2px solid #001561;
     border-radius: 15px;
 }
@@ -180,7 +180,7 @@ h2{
     }
     .navigation {
        position: absolute;
-       top: 90px;
+       top: 70px;
        left: -100%;
        width: 100%;
        display: flex;
