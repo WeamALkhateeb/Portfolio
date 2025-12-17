@@ -3,68 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weam Alkhateeb</title>
+    <title>Weam Alkhateeb | Portfolio</title>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>WEAM</h1>
-        <input type="checkbox" id="check">
-        <label for="check">
-            <i id="menu" class="fa-solid fa-bars"></i>
-        </label>
-        <nav class="navigation">
-            <a href="#main">Home</a>
-            <a href="#about">AboutMe</a>
-            <a href="#">ContactMe</a>
-            <a href="#">MyProject</a>
-        </nav>
-    </header>
 
-    <div class="main" id="main">
-        <div class="me">
-            <div class="content">
-                <h3>Hello, I'm</h3>
-                <h2>WEAM ALKHATEEB</h2>
-                <p>FrontEnd Developer "Mobile And Web Applications"</p>
-            </div>
-            <div class="myImg">
-                <img src="images/Weam.png" alt="">
+<!-- ================= HEADER ================= -->
+<header>
+    <h1>WEAM</h1>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i id="menu" class="fa-solid fa-bars"></i>
+    </label>
+
+    <nav class="navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- ================= HERO / HOME ================= -->
+<section class="main" id="home">
+    <div class="me">
+
+        <div class="content">
+            <h3>Hello, I'm</h3>
+            <h2>WEAM ALKHATEEB</h2>
+            <p>Flutter & Front-End Web Developer</p>
+
+            <div class="buttons">
+                <a href="WEAM_ALKHATEEB_CV.pdf" class="btn" download>Download CV</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
             </div>
         </div>
     </div>
+</section>
 
-    <section class="about" id="about">
-        <div class="aboutMe">
-            <h1>ABOUT-ME</h1>
-            <h3>Front-End Developer</h3>
-             <P>Hi, I’m weam, and I am a fourth-year Informatic Engineering student with nearly two 
-                year of experience in developing mobile applications with Flutter framework . During 
-                this 2year, I have worked on approximately three applications at this stage. The work 
-                involved designing attractive user interfaces, so I always strive to improve my visual 
-                design skills. I have worked well with RESTful APIs and various packages provided by 
-                Flutter. I have also worked on building custom widgets and optimizing their usage. 
-                Additionally,I now also work on web applications using HTML, CSS, and JS .., I have a strong understanding of algorithms and object-oriented 
-                programming concepts, and I am always looking to develop my skills and benefit from 
-                the experience of others
-            </P>
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+    <div class="aboutMe">
+        <h1>About Me</h1>
+        <h3>Flutter & Front-End Developer</h3>
+
+        <p>
+            Final-year Informatics Engineering student with over 2 years of experience in mobile
+            application development using Flutter, and recent experience in building responsive
+            web applications using React, HTML, CSS, and JavaScript. I am passionate about clean
+            UI/UX, reusable components, and high-performance applications.
+        </p>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill-box">
+            <h4>Technical Skills</h4>
+            <ul>
+                <li>Flutter, Dart, GetX (MVC)</li>
+                <li>React, JavaScript, HTML, CSS</li>
+                <li>REST APIs, JSON</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design & UI/UX</li>
+            </ul>
         </div>
-        <div class="education">
-            <h2>EDUCATION</h2>
-            <div>
-                <img src="images/IT.png" alt="">
-                <h4>IT_Student</h4>
-                <h5>2020-2025</h5>
-                <p> Informatic Engineering at Damascus University</p>
-               </div>
-                <div>
-                    <img src="images/HR.png" alt="">
-                    <h4>Management sciences</h4>
-                    <h5>2020-2024</h5>
-                    <p> Management Sciences, Human Resources Specialization at the Syrian Virtual University</p>
-                </div>
+
+        <div class="skill-box">
+            <h4>Soft Skills</h4>
+            <ul>
+                <li>Self-learning & Adaptability</li>
+                <li>Team Collaboration</li>
+                <li>Time Management</li>
+                <li>Problem Solving</li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- ================= Projects ================= -->
+<section class="projects reveal" id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+        <div class="project-card reveal delay-2">
+            <h4>Employee Complaints Management Platform</h4>
+            <p>
+                A web-based complaints management platform that allows employees
+                to submit, view, edit, and track their complaints. The system also
+                provides an admin panel for managing employees and monitoring
+                complaint statuses and workflows.
+            </p>
+            <div class="tech">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+            <a href="#" class="project-btn">
+                <i class="fa-brands fa-github"></i> View Code
+            </a>
+        </div>
+
+
+        <div class="project-card reveal delay-2">
+            <h4>E-Commerce Mobile App</h4>
+            <p>
+                Mobile shopping application featuring OTP authentication, product filtering,
+                cart management, order confirmation, and bilingual support.
+            </p>
+            <div class="tech">
+                <span>Flutter</span>
+                <span>Firebase</span>
+            </div>
+            <a href="https://github.com/TuqaBakr/Stupify" target="_blank" class="project-btn">
+                <i class="fa-brands fa-github"></i> View Code
+            </a>
+        </div>
+
+        <div class="project-card reveal delay-3">
+            <h4>Place Reservation System</h4>
+            <p>
+                Time-based reservation system allowing users to book places,
+                calculate pricing dynamically, and submit new place requests.
+            </p>
+            <div class="tech">
+                <span>Flutter</span>
+            </div>
+            <a href="https://github.com/WeamALkhateeb/Place_Reservation" target="_blank" class="project-btn">
+                <i class="fa-brands fa-github"></i> View Code
+            </a>
+        </div>
+
+        <div class="project-card reveal delay-3">
+            <h4>Restaurant Website</h4>
+            <p>
+                A responsive restaurant website designed to showcase the restaurant’s
+                services, menu, and story. The website focuses on clean layout,
+                visual presentation, and clear content structure.
+            </p>
+            <div class="tech">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+            <a href="https://weamalkhateeb.github.io/Restaurant/html/landing.html" class="project-btn">
+                <i class="fa-solid fa-globe"></i> Live Preview
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-info">
+        <p><i class="fa-solid fa-envelope"></i> weamalkhateeb360@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +963 950 536 693</p>
+        <p><i class="fa-brands fa-github"></i> github.com/WeamALkhateeb</p>
+        <p><i class="fa-solid fa-location-dot"></i> Damascus, Syria</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Weam Alkhateeb. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
